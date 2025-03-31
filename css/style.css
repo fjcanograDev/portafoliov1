@@ -27,7 +27,6 @@ body {
   section {
     padding: 2rem;
     max-width: 800px;
-    margin: auto;
   }
   
   h2 {
@@ -41,6 +40,57 @@ body {
     margin: 1rem 0;
   }
   
+  #sobre-mi {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.sobre-mi-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.sobre-mi-enlaces {  
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre la imagen y el texto */   
+    font-size: 32px; /* Tamaño más grande de los iconos */
+    transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.sobre-mi-enlaces a {  
+    color: black;
+}
+
+.sobre-mi-enlaces a:hover {
+    color: #1DA1F2; /* Azul estilo Twitter */
+    transform: scale(1.3);
+}
+
+.perfil-img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-mi-texto {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.sobre-mi-texto h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sobre-mi-texto p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
   .proyecto {
     border: 1px solid #ddd;
     padding: 1rem;
@@ -50,8 +100,6 @@ body {
   }
   
   footer {
-    background-color: #1a1a1a;
-    color: #fff;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
@@ -66,7 +114,7 @@ body {
 }
 
 footer a {
-    color: #fff;
+    color: #1a1a1a;
     font-size: 32px; /* Tamaño más grande de los iconos */
     transition: color 0.3s ease-in-out, transform 0.2s;
 }
@@ -82,3 +130,72 @@ footer p {
     opacity: 0.7;
 }
   
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.item-icon {
+    margin-right: 15px;
+    font-size: 24px;
+    color: black;
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 20px;
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.item-subtitle {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.item-description {
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: #444;
+}
+
+.item-technologies {
+    margin-bottom: 10px;
+}
+
+.tech-badge {
+    display: inline-block;
+    background-color:black;
+    color: #fff;
+    padding: 3px 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.item-links {
+    display: flex;
+    gap: 10px;
+}
+
+.item-link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.item-link i {
+    margin-right: 5px;
+}

@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Francisco Javier Cano Granado | Portafolio</title>
-  <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francisco Javier Cano Granado | Portafolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-  <header> 
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-  <main>
-    <section id="sobre-mi">
-        <h1>Francisco Javier Cano Granado</h1>
-        <p>Profesor de Informática | Desarrollador | Formador</p>
-      <h2>Sobre mí</h2>
-      <img src="img/foto.jpg" alt="Foto de Francisco Javier Cano Granado" />
-      <p>Soy ingeniero informático, profesor de FP especializado en programación, bases de datos y desarrollo web. Tengo experiencia como desarrollador en empresas como GOAL Systems y Schlumberger, y actualmente imparto clases en Extremadura. Hablo español, inglés, alemán y francés.</p>
+    <main>
+        <section id="sobre-mi">
+            <div class="sobre-mi-container">
+                <img src="./img/yo.jpg" alt="Foto de perfil" class="perfil-img" />
+                <div class="sobre-mi-texto">
+                    <h1>Francisco Javier Cano Granado</h1>
+                    <p>Profesor de Informática | Desarrollador | Formador</p>
+                    <div class="sobre-mi-enlaces">
+                        <a href="mailto:fjcanogra.dev@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/fjcanograDev" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/fjcanogra" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sobre-mi-texto">
+                <h1>Sobre mí</h1>
+                <p>Texo de presencación</p>
+
+            </div>
+        </section>
+        <section id="tecnologias">
+            <h2>Tecnologías</h2>
+            <div class="item-technologies">
+                <!-- Lista de tecnologías o habilidades relacionadas -->
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+            </div>
+        </section>
+        <section id="experiencia">
+            <h1>Experiencia</h1>
+            <div class="item">
+                <div class="item-icon">
+                    <!-- Ícono representativo (por ejemplo, un ícono de trabajo, proyecto o educación) -->
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="item-content">
+                    <h3 class="item-title">Título del puesto o proyecto</h3>
+                    <p class="item-subtitle">Nombre de la empresa o institución | Fechas</p>
+                    <p class="item-description">
+                        Breve descripción de la experiencia, proyecto o formación. Destaca responsabilidades, logros o tecnologías utilizadas.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos destacados</h2>
+            <div class="item">
+                <div class="item-icon">
+                    <!-- Ícono representativo (por ejemplo, un ícono de trabajo, proyecto o educación) -->
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="item-content">
+                    <h3 class="item-title">Curso de SQL con PL/SQL</h3>
+                    <p class="item-subtitle">Material didáctico para estudiantes de FP con ejemplos ejecutables en Oracle SQL Live.</p>
+                    <p class="item-description">
+                        <strong>Tecnologías:</strong> Oracle, PL/SQL, SQL
+                    </p>
+                    <div class="item-technologies">
+                        <!-- Lista de tecnologías o habilidades relacionadas -->
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
+                    <div class="item-links">
+                        <!-- Enlaces relacionados, como repositorios o certificados -->
+                        <a href="URL_DEL_REPOSITORIO" target="_blank" class="item-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="URL_DEL_CERTIFICADO" target="_blank" class="item-link">
+                            <i class="fas fa-certificate"></i> Certificado
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Puedes añadir más proyectos aquí -->
+        </section>
+    </main>
+    <section id="formación">
+        <h2>Formación</h2>
+        <div class="item">
+            <div class="item-icon">
+                <!-- Ícono representativo (por ejemplo, un ícono de trabajo, proyecto o educación) -->
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="item-content">
+                <h3 class="item-title">Título del puesto o proyecto</h3>
+                <p class="item-subtitle">Nombre de la empresa o institución | Fechas</p>
+                <p class="item-description">
+                    Breve descripción de la experiencia, proyecto o formación. Destaca responsabilidades, logros o tecnologías utilizadas.
+                </p>
+            </div>
+        </div>
     </section>
-  
-    <section id="proyectos">
-      <h2>Proyectos destacados</h2>
-      <div class="proyecto">
-        <h3>Bot de Tetris en Python</h3>
-        <p>Desarrollé un jugador automático para Tetris usando heurísticas y análisis de estados. Evaluado en un entorno de servidor.</p>
-        <p><strong>Tecnologías:</strong> Python, heurísticas, Git</p>
-        <a href="https://github.com/fjcanogra/tetris-bot" target="_blank">Ver en GitHub</a>
-      </div>
-      <div class="proyecto">
-        <h3>Curso de SQL con PL/SQL</h3>
-        <p>Material didáctico para estudiantes de FP con ejemplos ejecutables en Oracle SQL Live.</p>
-        <p><strong>Tecnologías:</strong> Oracle, PL/SQL, SQL</p>
-        <a href="https://github.com/fjcanogra/plsql-curso" target="_blank">Ver en GitHub</a>
-      </div>
-      <!-- Puedes añadir más proyectos aquí -->
-    </section>
-  
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Python, C, C++, Java, PHP</li>
-        <li>PL/SQL, SQL, MySQL, Oracle</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Git, GitHub, Linux</li>
-        <li>Docencia, cursos online, creación de materiales didácticos</li>
-      </ul>
-    </section>
-  
+    <footer>
+        <div class="footer-container">
+            <a href="mailto:fjcanogra.dev@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/fjcanograDev" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/fjcanogra" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     
-  
-  </main>
-  
-  <footer>
-    <div class="footer-container">
-        <a href="mailto:fjcanogra@gmail.com" title="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/fjcanogra" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/fjcanogra" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-    <p>&copy; 2025 Francisco Javier Cano Granado</p>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    
+
 </body>
 </html>
