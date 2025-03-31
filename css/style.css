@@ -26,7 +26,8 @@ body {
   
   section {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 900px;
+    margin: auto;
   }
   
   h2 {
@@ -42,7 +43,6 @@ body {
   
   #sobre-mi {
     max-width: 900px;
-    margin: auto;
     padding: 40px 20px;
 }
 
